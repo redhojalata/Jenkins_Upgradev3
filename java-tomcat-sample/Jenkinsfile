@@ -16,14 +16,14 @@ pipeline {
                 }
             }
         }
-        /**
         stage('Deploy in Staging Environment'){
             steps{
-                build job: 'Deploy_Application_Staging_Env'
+                build job: 'Project Deploy_Application_Stagin_Env'
 
             }
             
         }
+        /**
         stage('Deploy to Production'){
             steps{
                 timeout(time:5, unit:'DAYS'){
